@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Guestentry{% endblock %}
+
+{% block body %}
+    <h1>Edit Guestentry</h1>
+
+    {{ include('guestentry/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_guestentry_index') }}" class="btn btn-small">back to list</a>
+
+    {{ include('guestentry/_delete_form.html.twig') }}
+{% endblock %}
